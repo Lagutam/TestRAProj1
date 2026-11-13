@@ -1,0 +1,12 @@
+# Maven
+target/
+
+# VS Code
+.vscode/
+
+# Secrets
+.env
+config.properties
+
+# Logs
+*.log
