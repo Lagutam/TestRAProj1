@@ -17,9 +17,9 @@ public class BaseTest {
 
     private static final String BASE_EP ="https://api.github.com/";
 
-    RequestSpecification reqSpec = new RequestSpecBuilder().setBaseUri(BASE_EP).build();
+    public RequestSpecification reqSpec = new RequestSpecBuilder().setBaseUri(BASE_EP).build();
 
-    ResponseSpecification resSpec = new ResponseSpecBuilder()
+    public ResponseSpecification resSpec = new ResponseSpecBuilder()
                                         .expectStatusCode(200)
                                         .expectContentType(ContentType.JSON)
                                         .expectBody(Matchers.notNullValue())
